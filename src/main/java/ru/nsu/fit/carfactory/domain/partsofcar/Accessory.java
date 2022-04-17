@@ -2,7 +2,7 @@ package ru.nsu.fit.carfactory.domain.partsofcar;
 
 import java.util.UUID;
 
-public class Accessory {
+public class Accessory implements SparePart{
     private final UUID id;
 
     private Accessory(UUID id){
