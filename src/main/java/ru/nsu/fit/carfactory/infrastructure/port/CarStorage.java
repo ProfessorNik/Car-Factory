@@ -1,8 +1,9 @@
 package ru.nsu.fit.carfactory.infrastructure.port;
 
-import ru.nsu.fit.carfactory.domain.Car;
-
 public interface CarStorage<Car> {
+    int getMaxSize();
+    int getNumProducts();
     void store(Car car);
+    int getNumProductsWhenStorageChanged();
     Car consign();
 }
